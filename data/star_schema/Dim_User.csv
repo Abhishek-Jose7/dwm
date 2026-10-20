@@ -1,0 +1,241 @@
+User_Key,User_ID,Customer_Name,Age,Age_Group,Gender,Location_Region,User_Segment
+1,SP-1001,Gabriel Garcia,36,35-49 (Mid-Career),Male,Europe,Tech Audiophile
+2,SP-1002,Liam Hall,20,18-24 (Gen Z),Male,North America,Student
+3,SP-1003,Kabir Wilson,30,25-34 (Young Professionals),Female,Latin America,Casual Listener
+4,SP-1004,Charlotte Miller,26,25-34 (Young Professionals),Male,Europe,Young Professional
+5,SP-1005,Matthew Jones,29,25-34 (Young Professionals),Female,Latin America,Casual Listener
+6,SP-1006,Mila Hall,23,18-24 (Gen Z),Male,Europe,Student
+7,SP-1007,Layla Brown,22,18-24 (Gen Z),Female,Europe,Student
+8,SP-1008,Diya Harris,23,18-24 (Gen Z),Female,North America,Student
+9,SP-1009,Emma Smith,25,25-34 (Young Professionals),Female,North America,Young Professional
+10,SP-1010,Olivia Lopez,45,35-49 (Mid-Career),Female,North America,Casual Listener
+11,SP-1011,Charlotte Robinson,29,25-34 (Young Professionals),Male,Latin America,Young Professional
+12,SP-1012,Nora Smith,31,25-34 (Young Professionals),Female,Latin America,Young Professional
+13,SP-1013,Henry Hernandez,35,35-49 (Mid-Career),Female,Europe,Young Professional
+14,SP-1014,Hannah Hill,48,35-49 (Mid-Career),Female,Europe,Casual Listener
+15,SP-1015,Daniel Young,36,35-49 (Mid-Career),Non-Binary,Latin America,Young Professional
+16,SP-1016,Camila Gonzalez,24,18-24 (Gen Z),Female,North America,Young Professional
+17,SP-1017,Luna Wright,36,35-49 (Mid-Career),Female,North America,Casual Listener
+18,SP-1018,Kabir Sharma,26,25-34 (Young Professionals),Male,North America,Young Professional
+19,SP-1019,Kinsley Rodriguez,19,18-24 (Gen Z),Female,Asia-Pacific,Student
+20,SP-1020,Daniel Harris,23,18-24 (Gen Z),Non-Binary,North America,Student
+21,SP-1021,Elena Thomas,35,35-49 (Mid-Career),Female,Europe,Young Professional
+22,SP-1022,Isabella Lopez,24,18-24 (Gen Z),Female,North America,Student
+23,SP-1023,Kinsley Jackson,27,25-34 (Young Professionals),Male,Latin America,Young Professional
+24,SP-1024,Lucas Brown,34,25-34 (Young Professionals),Male,Latin America,Young Professional
+25,SP-1025,Emily Jones,20,18-24 (Gen Z),Male,Latin America,Student
+26,SP-1026,Ananya Martin,28,25-34 (Young Professionals),Non-Binary,Europe,Casual Listener
+27,SP-1027,Nora Anderson,42,35-49 (Mid-Career),Female,Europe,Tech Audiophile
+28,SP-1028,Emma Baker,29,25-34 (Young Professionals),Female,Asia-Pacific,Young Professional
+29,SP-1029,Jackson Young,26,25-34 (Young Professionals),Male,Europe,Young Professional
+30,SP-1030,Mia Perez,36,35-49 (Mid-Career),Male,Europe,Tech Audiophile
+31,SP-1031,Olivia Allen,38,35-49 (Mid-Career),Female,Latin America,Casual Listener
+32,SP-1032,Evelyn Nguyen,29,25-34 (Young Professionals),Male,Europe,Young Professional
+33,SP-1033,Alexander Lee,26,25-34 (Young Professionals),Male,Europe,Casual Listener
+34,SP-1034,Riley Hernandez,21,18-24 (Gen Z),Female,Asia-Pacific,Student
+35,SP-1035,Hannah Williams,31,25-34 (Young Professionals),Female,Europe,Young Professional
+36,SP-1036,Emma Flores,20,18-24 (Gen Z),Male,North America,Student
+37,SP-1037,Charlotte Campbell,26,25-34 (Young Professionals),Female,Latin America,Young Professional
+38,SP-1038,Evelyn Brown,22,18-24 (Gen Z),Female,Latin America,Student
+39,SP-1039,Charlotte Jones,31,25-34 (Young Professionals),Male,North America,Young Professional
+40,SP-1040,Emily Thomas,28,25-34 (Young Professionals),Female,North America,Young Professional
+41,SP-1041,Jackson Nguyen,39,35-49 (Mid-Career),Male,Asia-Pacific,Tech Audiophile
+42,SP-1042,Oliver Rodriguez,32,25-34 (Young Professionals),Female,Latin America,Young Professional
+43,SP-1043,Oliver Martin,30,25-34 (Young Professionals),Male,Latin America,Young Professional
+44,SP-1044,Rohan Flores,35,35-49 (Mid-Career),Female,Europe,Young Professional
+45,SP-1045,Kabir Adams,37,35-49 (Mid-Career),Female,Europe,Young Professional
+46,SP-1046,Mila Hill,23,18-24 (Gen Z),Male,North America,Student
+47,SP-1047,Noah Scott,33,25-34 (Young Professionals),Male,Europe,Young Professional
+48,SP-1048,Gabriel Rodriguez,23,18-24 (Gen Z),Non-Binary,North America,Young Professional
+49,SP-1049,Layla Baker,23,18-24 (Gen Z),Male,Europe,Student
+50,SP-1050,Amelia Rodriguez,29,25-34 (Young Professionals),Female,Asia-Pacific,Casual Listener
+51,SP-1051,Jackson Perez,27,25-34 (Young Professionals),Female,Europe,Young Professional
+52,SP-1052,Kabir Nguyen,36,35-49 (Mid-Career),Female,Asia-Pacific,Young Professional
+53,SP-1053,Daniel Allen,36,35-49 (Mid-Career),Non-Binary,North America,Young Professional
+54,SP-1054,Charlotte Green,55,50+ (Mature),Male,Latin America,Casual Listener
+55,SP-1055,Carlos Campbell,24,18-24 (Gen Z),Female,North America,Young Professional
+56,SP-1056,Samuel Patel,46,35-49 (Mid-Career),Female,Europe,Casual Listener
+57,SP-1057,Charlotte Johnson,18,18-24 (Gen Z),Male,Asia-Pacific,Student
+58,SP-1058,Carlos Thompson,56,50+ (Mature),Female,Asia-Pacific,Casual Listener
+59,SP-1059,Kabir Williams,23,18-24 (Gen Z),Female,Europe,Casual Listener
+60,SP-1060,Rohan King,27,25-34 (Young Professionals),Male,Europe,Young Professional
+61,SP-1061,Hannah Verma,21,18-24 (Gen Z),Female,Asia-Pacific,Student
+62,SP-1062,Rohan Hill,24,18-24 (Gen Z),Female,Europe,Student
+63,SP-1063,Chloe Thompson,25,25-34 (Young Professionals),Male,North America,Young Professional
+64,SP-1064,Zoey Clark,36,35-49 (Mid-Career),Male,Asia-Pacific,Young Professional
+65,SP-1065,Isabella Anderson,28,25-34 (Young Professionals),Male,Europe,Casual Listener
+66,SP-1066,Mateo Wilson,22,18-24 (Gen Z),Male,Europe,Student
+67,SP-1067,Matthew Allen,23,18-24 (Gen Z),Female,North America,Young Professional
+68,SP-1068,Layla Anderson,19,18-24 (Gen Z),Non-Binary,North America,Student
+69,SP-1069,Matthew Wright,31,25-34 (Young Professionals),Female,Asia-Pacific,Young Professional
+70,SP-1070,Vikram Wright,24,18-24 (Gen Z),Male,North America,Young Professional
+71,SP-1071,Sebastian Lee,20,18-24 (Gen Z),Non-Binary,Europe,Student
+72,SP-1072,Charlotte Miller,37,35-49 (Mid-Career),Male,North America,Young Professional
+73,SP-1073,Dev Lewis,24,18-24 (Gen Z),Male,Asia-Pacific,Student
+74,SP-1074,Olivia Rivera,28,25-34 (Young Professionals),Female,Europe,Young Professional
+75,SP-1075,Sophia Garcia,28,25-34 (Young Professionals),Female,Latin America,Tech Audiophile
+76,SP-1076,Isabella Nguyen,32,25-34 (Young Professionals),Male,Europe,Young Professional
+77,SP-1077,Priya Green,22,18-24 (Gen Z),Female,Latin America,Student
+78,SP-1078,Vikram Scott,24,18-24 (Gen Z),Female,Europe,Student
+79,SP-1079,Noah Perez,23,18-24 (Gen Z),Male,Asia-Pacific,Young Professional
+80,SP-1080,Emily Scott,18,18-24 (Gen Z),Male,Asia-Pacific,Student
+81,SP-1081,Jackson Walker,29,25-34 (Young Professionals),Non-Binary,North America,Young Professional
+82,SP-1082,Harper Allen,23,18-24 (Gen Z),Female,North America,Student
+83,SP-1083,Aarav Green,24,18-24 (Gen Z),Female,Europe,Student
+84,SP-1084,Aditi Garcia,23,18-24 (Gen Z),Female,Europe,Casual Listener
+85,SP-1085,Mila Young,34,25-34 (Young Professionals),Male,North America,Young Professional
+86,SP-1086,Kinsley Thomas,51,50+ (Mature),Female,Europe,Tech Audiophile
+87,SP-1087,Samuel Hill,28,25-34 (Young Professionals),Male,Latin America,Young Professional
+88,SP-1088,Elena Garcia,24,18-24 (Gen Z),Male,Asia-Pacific,Student
+89,SP-1089,Evelyn Harris,22,18-24 (Gen Z),Male,Latin America,Student
+90,SP-1090,Priya Clark,28,25-34 (Young Professionals),Female,Europe,Young Professional
+91,SP-1091,Aarav Baker,24,18-24 (Gen Z),Female,Asia-Pacific,Young Professional
+92,SP-1092,Aditi Anderson,20,18-24 (Gen Z),Female,Europe,Student
+93,SP-1093,Dev Rivera,27,25-34 (Young Professionals),Female,North America,Young Professional
+94,SP-1094,Ethan Robinson,36,35-49 (Mid-Career),Male,Asia-Pacific,Young Professional
+95,SP-1095,Lucas Nguyen,24,18-24 (Gen Z),Male,Europe,Casual Listener
+96,SP-1096,Abigail Nguyen,37,35-49 (Mid-Career),Female,Europe,Young Professional
+97,SP-1097,Dev Scott,34,25-34 (Young Professionals),Male,North America,Young Professional
+98,SP-1098,Ava Davis,30,25-34 (Young Professionals),Male,Europe,Young Professional
+99,SP-1099,Oliver Rivera,34,25-34 (Young Professionals),Male,North America,Young Professional
+100,SP-1100,Priya Young,55,50+ (Mature),Female,Asia-Pacific,Casual Listener
+101,SP-1101,Samuel Walker,37,35-49 (Mid-Career),Female,Europe,Young Professional
+102,SP-1102,Aarav Scott,24,18-24 (Gen Z),Female,Europe,Young Professional
+103,SP-1103,Carlos Lewis,18,18-24 (Gen Z),Male,North America,Student
+104,SP-1104,Liam Garcia,22,18-24 (Gen Z),Female,Latin America,Student
+105,SP-1105,Oliver Moore,21,18-24 (Gen Z),Male,Europe,Student
+106,SP-1106,Amelia Patel,33,25-34 (Young Professionals),Female,Asia-Pacific,Tech Audiophile
+107,SP-1107,Amelia King,41,35-49 (Mid-Career),Female,Asia-Pacific,Casual Listener
+108,SP-1108,Olivia Brown,31,25-34 (Young Professionals),Female,Europe,Young Professional
+109,SP-1109,Aditi Lewis,34,25-34 (Young Professionals),Male,North America,Young Professional
+110,SP-1110,Noah Rivera,37,35-49 (Mid-Career),Female,Europe,Young Professional
+111,SP-1111,Layla Campbell,23,18-24 (Gen Z),Female,Latin America,Student
+112,SP-1112,Mateo Miller,18,18-24 (Gen Z),Male,North America,Student
+113,SP-1113,Arjun Ramirez,21,18-24 (Gen Z),Male,Europe,Student
+114,SP-1114,Henry Rodriguez,30,25-34 (Young Professionals),Male,Europe,Tech Audiophile
+115,SP-1115,Harper Walker,38,35-49 (Mid-Career),Male,North America,Casual Listener
+116,SP-1116,Nora Harris,44,35-49 (Mid-Career),Male,Europe,Tech Audiophile
+117,SP-1117,Rohan Young,23,18-24 (Gen Z),Female,North America,Student
+118,SP-1118,Kinsley Baker,37,35-49 (Mid-Career),Male,North America,Young Professional
+119,SP-1119,Daniel Hernandez,28,25-34 (Young Professionals),Non-Binary,North America,Young Professional
+120,SP-1120,Hannah Moore,21,18-24 (Gen Z),Male,North America,Student
+121,SP-1121,Sebastian Flores,32,25-34 (Young Professionals),Female,Asia-Pacific,Young Professional
+122,SP-1122,Zoey Lee,55,50+ (Mature),Female,North America,Casual Listener
+123,SP-1123,Luna Walker,37,35-49 (Mid-Career),Female,Asia-Pacific,Tech Audiophile
+124,SP-1124,Luna Garcia,23,18-24 (Gen Z),Male,Europe,Student
+125,SP-1125,Amelia Gonzalez,21,18-24 (Gen Z),Female,North America,Student
+126,SP-1126,Noah Jackson,36,35-49 (Mid-Career),Male,North America,Young Professional
+127,SP-1127,Liam Wright,40,35-49 (Mid-Career),Male,Europe,Casual Listener
+128,SP-1128,Henry Gonzalez,28,25-34 (Young Professionals),Male,Europe,Young Professional
+129,SP-1129,Diya Gonzalez,20,18-24 (Gen Z),Male,Asia-Pacific,Student
+130,SP-1130,Aarav Williams,37,35-49 (Mid-Career),Female,North America,Young Professional
+131,SP-1131,Hannah Nguyen,24,18-24 (Gen Z),Female,North America,Young Professional
+132,SP-1132,Sophia Gonzalez,25,25-34 (Young Professionals),Male,Europe,Young Professional
+133,SP-1133,Noah Johnson,37,35-49 (Mid-Career),Female,North America,Young Professional
+134,SP-1134,Elena Williams,53,50+ (Mature),Female,North America,Casual Listener
+135,SP-1135,Dev Wilson,27,25-34 (Young Professionals),Male,North America,Young Professional
+136,SP-1136,Kabir Flores,32,25-34 (Young Professionals),Male,North America,Young Professional
+137,SP-1137,Chloe Lopez,35,35-49 (Mid-Career),Female,Europe,Young Professional
+138,SP-1138,Layla Miller,31,25-34 (Young Professionals),Male,Latin America,Young Professional
+139,SP-1139,Aditi King,31,25-34 (Young Professionals),Male,North America,Young Professional
+140,SP-1140,Riley Ramirez,35,35-49 (Mid-Career),Female,Europe,Casual Listener
+141,SP-1141,Amelia Ramirez,43,35-49 (Mid-Career),Male,Asia-Pacific,Casual Listener
+142,SP-1142,Camila Hernandez,46,35-49 (Mid-Career),Male,North America,Casual Listener
+143,SP-1143,Lucas Jones,36,35-49 (Mid-Career),Male,North America,Young Professional
+144,SP-1144,Arjun Harris,35,35-49 (Mid-Career),Female,North America,Casual Listener
+145,SP-1145,Ananya Harris,24,18-24 (Gen Z),Male,Asia-Pacific,Young Professional
+146,SP-1146,Camila Clark,32,25-34 (Young Professionals),Male,North America,Young Professional
+147,SP-1147,Aditi Patel,44,35-49 (Mid-Career),Female,Europe,Tech Audiophile
+148,SP-1148,Mila Hill,33,25-34 (Young Professionals),Non-Binary,North America,Casual Listener
+149,SP-1149,Zoey Jones,43,35-49 (Mid-Career),Female,Europe,Casual Listener
+150,SP-1150,Sophia Thompson,19,18-24 (Gen Z),Male,North America,Student
+151,SP-1151,Aditi Jackson,19,18-24 (Gen Z),Male,Asia-Pacific,Student
+152,SP-1152,Lucas Wilson,33,25-34 (Young Professionals),Male,North America,Young Professional
+153,SP-1153,Ava Hernandez,26,25-34 (Young Professionals),Male,North America,Young Professional
+154,SP-1154,Layla Sanchez,37,35-49 (Mid-Career),Female,Asia-Pacific,Young Professional
+155,SP-1155,Mateo Harris,53,50+ (Mature),Male,North America,Casual Listener
+156,SP-1156,Ethan Thomas,49,35-49 (Mid-Career),Male,Asia-Pacific,Casual Listener
+157,SP-1157,Jackson Wilson,23,18-24 (Gen Z),Non-Binary,Asia-Pacific,Young Professional
+158,SP-1158,Noah Sanchez,34,25-34 (Young Professionals),Female,North America,Young Professional
+159,SP-1159,Henry Jones,22,18-24 (Gen Z),Male,Latin America,Student
+160,SP-1160,Sophia Hill,26,25-34 (Young Professionals),Female,Asia-Pacific,Casual Listener
+161,SP-1161,Layla Sharma,26,25-34 (Young Professionals),Male,Latin America,Young Professional
+162,SP-1162,Olivia Rivera,50,50+ (Mature),Male,North America,Casual Listener
+163,SP-1163,Amelia Rodriguez,49,35-49 (Mid-Career),Female,North America,Casual Listener
+164,SP-1164,Camila Lewis,42,35-49 (Mid-Career),Female,North America,Casual Listener
+165,SP-1165,Aiden Lopez,57,50+ (Mature),Non-Binary,Asia-Pacific,Casual Listener
+166,SP-1166,Sebastian Patel,22,18-24 (Gen Z),Female,North America,Casual Listener
+167,SP-1167,Priya Perez,27,25-34 (Young Professionals),Male,Europe,Young Professional
+168,SP-1168,Aarav Perez,40,35-49 (Mid-Career),Male,Europe,Casual Listener
+169,SP-1169,Harper Clark,33,25-34 (Young Professionals),Female,North America,Young Professional
+170,SP-1170,Evelyn Harris,23,18-24 (Gen Z),Male,Europe,Student
+171,SP-1171,Daniel Baker,24,18-24 (Gen Z),Male,Europe,Student
+172,SP-1172,Henry Flores,24,18-24 (Gen Z),Female,North America,Student
+173,SP-1173,Hannah Lewis,23,18-24 (Gen Z),Female,Asia-Pacific,Student
+174,SP-1174,Isabella Hernandez,18,18-24 (Gen Z),Male,Asia-Pacific,Student
+175,SP-1175,Evelyn Lopez,23,18-24 (Gen Z),Female,Europe,Student
+176,SP-1176,Sophia Wright,59,50+ (Mature),Female,Europe,Casual Listener
+177,SP-1177,Matthew Young,24,18-24 (Gen Z),Female,Asia-Pacific,Young Professional
+178,SP-1178,Sophia Hall,45,35-49 (Mid-Career),Male,North America,Casual Listener
+179,SP-1179,Carlos Patel,43,35-49 (Mid-Career),Female,Asia-Pacific,Casual Listener
+180,SP-1180,Sophia Wright,31,25-34 (Young Professionals),Male,Asia-Pacific,Casual Listener
+181,SP-1181,Aiden Robinson,32,25-34 (Young Professionals),Female,Asia-Pacific,Young Professional
+182,SP-1182,Penelope Rodriguez,27,25-34 (Young Professionals),Male,North America,Young Professional
+183,SP-1183,Sophia Robinson,24,18-24 (Gen Z),Female,North America,Student
+184,SP-1184,Olivia Martinez,18,18-24 (Gen Z),Non-Binary,Latin America,Student
+185,SP-1185,Noah Scott,36,35-49 (Mid-Career),Male,North America,Tech Audiophile
+186,SP-1186,Noah Green,28,25-34 (Young Professionals),Male,North America,Casual Listener
+187,SP-1187,Amelia Thompson,22,18-24 (Gen Z),Female,Europe,Student
+188,SP-1188,Mia King,23,18-24 (Gen Z),Male,Latin America,Young Professional
+189,SP-1189,Amelia Wright,28,25-34 (Young Professionals),Female,North America,Young Professional
+190,SP-1190,Nora Johnson,36,35-49 (Mid-Career),Male,North America,Tech Audiophile
+191,SP-1191,Alexander Brown,19,18-24 (Gen Z),Male,North America,Student
+192,SP-1192,Camila Flores,32,25-34 (Young Professionals),Male,Europe,Casual Listener
+193,SP-1193,Diya King,22,18-24 (Gen Z),Female,Latin America,Student
+194,SP-1194,Penelope Verma,24,18-24 (Gen Z),Male,North America,Student
+195,SP-1195,Harper Lopez,21,18-24 (Gen Z),Male,Europe,Student
+196,SP-1196,Arjun Nelson,51,50+ (Mature),Female,Europe,Casual Listener
+197,SP-1197,Carlos Wilson,27,25-34 (Young Professionals),Male,Europe,Young Professional
+198,SP-1198,Harper Thompson,37,35-49 (Mid-Career),Non-Binary,North America,Young Professional
+199,SP-1199,Mateo Flores,29,25-34 (Young Professionals),Female,Latin America,Young Professional
+200,SP-1200,Zoey Moore,31,25-34 (Young Professionals),Male,North America,Young Professional
+201,SP-1201,Jackson Verma,26,25-34 (Young Professionals),Non-Binary,Europe,Young Professional
+202,SP-1202,Kinsley Williams,19,18-24 (Gen Z),Female,Asia-Pacific,Student
+203,SP-1203,Aarav Clark,35,35-49 (Mid-Career),Female,Asia-Pacific,Young Professional
+204,SP-1204,Alexander King,36,35-49 (Mid-Career),Non-Binary,Asia-Pacific,Young Professional
+205,SP-1205,Lucas Williams,28,25-34 (Young Professionals),Non-Binary,Europe,Young Professional
+206,SP-1206,Layla Lopez,44,35-49 (Mid-Career),Male,Europe,Casual Listener
+207,SP-1207,Dev Anderson,23,18-24 (Gen Z),Male,North America,Student
+208,SP-1208,Mateo Martin,30,25-34 (Young Professionals),Male,North America,Young Professional
+209,SP-1209,Noah Wilson,30,25-34 (Young Professionals),Male,Latin America,Young Professional
+210,SP-1210,Oliver Taylor,23,18-24 (Gen Z),Male,North America,Student
+211,SP-1211,Priya Sanchez,24,18-24 (Gen Z),Male,North America,Student
+212,SP-1212,Layla Nelson,23,18-24 (Gen Z),Male,North America,Young Professional
+213,SP-1213,Abigail Torres,18,18-24 (Gen Z),Female,North America,Student
+214,SP-1214,Zoey Walker,36,35-49 (Mid-Career),Male,North America,Young Professional
+215,SP-1215,Aarav Flores,20,18-24 (Gen Z),Male,North America,Student
+216,SP-1216,Henry Moore,23,18-24 (Gen Z),Male,Asia-Pacific,Young Professional
+217,SP-1217,Arjun Jones,24,18-24 (Gen Z),Male,Asia-Pacific,Student
+218,SP-1218,Mateo Anderson,27,25-34 (Young Professionals),Male,North America,Casual Listener
+219,SP-1219,Mia Jones,23,18-24 (Gen Z),Male,Asia-Pacific,Young Professional
+220,SP-1220,Matthew Allen,37,35-49 (Mid-Career),Female,North America,Young Professional
+221,SP-1221,Isabella Thomas,22,18-24 (Gen Z),Male,North America,Student
+222,SP-1222,Evelyn Scott,29,25-34 (Young Professionals),Female,Europe,Young Professional
+223,SP-1223,Rohan Nelson,23,18-24 (Gen Z),Female,North America,Student
+224,SP-1224,Elena Lopez,23,18-24 (Gen Z),Female,North America,Student
+225,SP-1225,Mila Nguyen,26,25-34 (Young Professionals),Male,North America,Young Professional
+226,SP-1226,Harper Robinson,31,25-34 (Young Professionals),Male,Asia-Pacific,Young Professional
+227,SP-1227,Chloe Anderson,34,25-34 (Young Professionals),Female,Europe,Young Professional
+228,SP-1228,Sophia Brown,18,18-24 (Gen Z),Female,Europe,Student
+229,SP-1229,Gabriel Harris,19,18-24 (Gen Z),Female,Europe,Student
+230,SP-1230,Kabir Johnson,23,18-24 (Gen Z),Male,Europe,Student
+231,SP-1231,Aarav Jackson,25,25-34 (Young Professionals),Male,Latin America,Young Professional
+232,SP-1232,Samuel Miller,18,18-24 (Gen Z),Female,Asia-Pacific,Student
+233,SP-1233,Gabriel Anderson,20,18-24 (Gen Z),Male,Europe,Student
+234,SP-1234,Priya Hall,34,25-34 (Young Professionals),Male,Asia-Pacific,Young Professional
+235,SP-1235,Luna Allen,34,25-34 (Young Professionals),Male,Europe,Young Professional
+236,SP-1236,Hannah Harris,26,25-34 (Young Professionals),Male,Latin America,Young Professional
+237,SP-1237,Henry Sharma,23,18-24 (Gen Z),Male,Asia-Pacific,Young Professional
+238,SP-1238,Mia Williams,38,35-49 (Mid-Career),Female,North America,Tech Audiophile
+239,SP-1239,Daniel Davis,22,18-24 (Gen Z),Male,North America,Student
+240,SP-1240,Layla Johnson,56,50+ (Mature),Female,North America,Casual Listener

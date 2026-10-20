@@ -1,0 +1,5 @@
+Device_Key,Primary_Device,Platform_Type,Manufacturer,Lossless_Hardware_Support
+1,Smartphone (iOS),Mobile OS,Apple,High
+2,Smartphone (Android),Mobile OS,"Various (Samsung, Xiaomi, Pixel)",Medium/Fragmented
+3,Desktop App/Web,Desktop / PC,Windows / MacOS / Linux,Very High (DAC support)
+4,Smart Speaker/Home,Connected IoT,"Amazon Echo, Google Nest, Sonos",Moderate

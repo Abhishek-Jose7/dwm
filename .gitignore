@@ -1,0 +1,163 @@
+# ==============================================================================
+# SoundPulse Streaming Inc. — Git Ignore Rules
+# Domain: Data Warehousing & Data Mining (DWM) — Business Intelligence Platform
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Python Environment & Bytecode
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+virtualenv/
+
+# Python Profiling / Coverage
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# ------------------------------------------------------------------------------
+# 2. Jupyter Notebooks & Data Science Scratch
+# ------------------------------------------------------------------------------
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+.ipython/
+
+# ------------------------------------------------------------------------------
+# 3. Operating System Specific
+# ------------------------------------------------------------------------------
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+
+# ------------------------------------------------------------------------------
+# 4. IDEs, Editors & Tooling
+# ------------------------------------------------------------------------------
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# PyCharm / JetBrains
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Eclipse
+.project
+.pydevproject
+.settings/
+
+# Vim / Emacs
+*.swp
+*.swo
+[#]*[#]
+.#*
+
+# ------------------------------------------------------------------------------
+# 5. Office, Power BI & Tableau Temporary Files
+# ------------------------------------------------------------------------------
+# Microsoft Office lock files generated during editing
+~$*.pptx
+~$*.xlsx
+~$*.docx
+~$*.doc
+~$*.ppt
+
+# Power BI / Tableau temp and backup files
+*.tmp
+*.temp
+*.bak
+*.pbit.backup
+*.twbx.temp
+
+# ------------------------------------------------------------------------------
+# 6. Environment Variables, Secrets & Credentials
+# ------------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.cert
+*.crt
+secrets.json
+
+# ------------------------------------------------------------------------------
+# 7. Node / Web Package Manager (if tooling applied)
+# ------------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ------------------------------------------------------------------------------
+# 8. Logs & Diagnostic Dumps
+# ------------------------------------------------------------------------------
+*.log
+logs/
+*.pid
+*.seed
+*.crashdump

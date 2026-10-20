@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoundPulse | Music Business Operations & Data Warehouse Analytics</title>
+  <!-- Modern Fonts: Inter with font features -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sleek Enterprise Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-mark">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18V5l12-2v13"></path>
+            <circle cx="6" cy="18" r="3"></circle>
+            <circle cx="18" cy="16" r="3"></circle>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">SoundPulse</span>
+          <span class="brand-badge">ANALYTICS</span>
+        </div>
+      </div>
+
+      <div class="org-context">
+        <span class="context-label">WORKSPACE</span>
+        <div class="context-selector">
+          <span class="context-status-dot"></span>
+          <span class="context-name">Global Streaming Ops</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <button class="nav-item active" data-tab="tab-overview">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+          <span>Executive Overview</span>
+        </button>
+
+        <button class="nav-item" data-tab="tab-business-value">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+          <span>Business Value Matrix</span>
+          <span class="nav-pill">BL-4</span>
+        </button>
+
+        <button class="nav-item" data-tab="tab-star-schema">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+          </svg>
+          <span>Star Schema DW</span>
+        </button>
+
+        <button class="nav-item" data-tab="tab-cohort">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          <span>Cohort Telemetry (240)</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="model-meta">
+          <span class="meta-title">DWM BL-4 Evaluation</span>
+          <span class="meta-sub">Star Schema • Power BI • Tableau</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Top Operational Bar -->
+      <header class="topbar">
+        <div class="topbar-left">
+          <h1 id="page-title">Executive Operations Overview</h1>
+          <p id="page-subtitle">240-Respondent Operational Cohort • Unit Economics, Churn & Algorithmic Diagnostics</p>
+        </div>
+        <div class="topbar-right">
+          <div class="topbar-tag">
+            <span class="pulse-indicator"></span>
+            <span>Live Telemetry</span>
+          </div>
+          <button id="btn-export-csv" class="btn btn-outline" title="Export Cleaned Dataset">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Export CSV</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Sleek Multi-Dimensional Slicer Bar -->
+      <section class="toolbar-section">
+        <div class="toolbar-slicers">
+          <!-- Region Segmented Pills -->
+          <div class="segmented-control" id="region-segmented">
+            <button class="seg-btn active" data-region="ALL">Global (All)</button>
+            <button class="seg-btn" data-region="North America">NA</button>
+            <button class="seg-btn" data-region="Europe">EU</button>
+            <button class="seg-btn" data-region="Asia-Pacific">APAC</button>
+            <button class="seg-btn" data-region="Latin America">LATAM</button>
+          </div>
+
+          <div class="filter-dropdowns">
+            <div class="select-wrapper">
+              <label>Plan</label>
+              <select id="filter-plan">
+                <option value="ALL">All Subscription Tiers</option>
+                <option value="Free (Ad-Supported)">Free (Ad-Supported)</option>
+                <option value="Student Premium">Student Premium (₹399)</option>
+                <option value="Individual Premium">Individual Premium (₹879)</option>
+                <option value="Family Premium">Family Premium (₹1,359)</option>
+              </select>
+            </div>
+
+            <div class="select-wrapper">
+              <label>Segment</label>
+              <select id="filter-segment">
+                <option value="ALL">All Segments</option>
+                <option value="Student">Student</option>
+                <option value="Young Professional">Young Professional</option>
+                <option value="Casual Listener">Casual Listener</option>
+                <option value="Tech Audiophile">Tech Audiophile</option>
+              </select>
+            </div>
+
+            <div class="select-wrapper">
+              <label>Status</label>
+              <select id="filter-churn">
+                <option value="ALL">All Listeners</option>
+                <option value="No">Active Only</option>
+                <option value="Yes">Churned Only</option>
+              </select>
+            </div>
+
+            <button id="btn-reset" class="btn btn-ghost" title="Reset all filters">Reset</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================== -->
+      <!-- TAB 1: EXECUTIVE OVERVIEW -->
+      <!-- ============================================================== -->
+      <div id="tab-overview" class="tab-pane active">
+        <!-- Metric KPI Cards -->
+        <section class="metrics-row">
+          <div class="metric-card">
+            <div class="metric-top">
+              <span class="metric-label">Monthly Gross Revenue</span>
+              <span class="metric-badge trend-up">+14.2% MoM</span>
+            </div>
+            <div class="metric-value" id="kpi-revenue">₹0.00</div>
+            <div class="metric-meta">
+              <span id="kpi-arpu">₹0.00 ARPU</span>
+              <span class="meta-dot">•</span>
+              <span id="kpi-sub-rev">Sub + Ad Revenue</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-top">
+              <span class="metric-label">Active Retention</span>
+              <span class="metric-badge trend-neutral" id="kpi-active-badge">65.8%</span>
+            </div>
+            <div class="metric-value" id="kpi-active-users">0</div>
+            <div class="metric-meta">
+              <span id="kpi-active-sub">158 Active of 240 Users</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-top">
+              <span class="metric-label">Cohort Churn Rate</span>
+              <span class="metric-badge trend-down" id="kpi-churn-badge">High Risk</span>
+            </div>
+            <div class="metric-value" id="kpi-churn-rate">0.0%</div>
+            <div class="metric-meta">
+              <span>Benchmark: &lt; 20.0%</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-top">
+              <span class="metric-label">Net Gross Margin</span>
+              <span class="metric-badge trend-up" id="kpi-margin-ratio">25.9%</span>
+            </div>
+            <div class="metric-value" id="kpi-margin">₹0.00</div>
+            <div class="metric-meta">
+              <span id="kpi-margin-sub">After ₹1,18,946 Label Royalties</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-top">
+              <span class="metric-label">Weekly Listening</span>
+              <span class="metric-badge trend-neutral">Cohort Avg</span>
+            </div>
+            <div class="metric-value" id="kpi-hours">0.0 <span class="unit">hrs</span></div>
+            <div class="metric-meta">
+              <span id="kpi-streams-meta">~52.4 streams / day</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-top">
+              <span class="metric-label">Net Promoter Score</span>
+              <span class="metric-badge" id="kpi-nps-badge">Score</span>
+            </div>
+            <div class="metric-value" id="kpi-nps">0</div>
+            <div class="metric-meta">
+              <span id="kpi-nps-meta">Industry Benchmark: +40</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Main Chart Layout (2x2 Grid) -->
+        <section class="charts-section">
+          <!-- Chart 1: Plan Financials -->
+          <div class="card chart-box">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">Subscription Tier Unit Economics</h3>
+                <span class="card-desc">Gross Revenue vs Label Copyright Royalties vs Net Margin</span>
+              </div>
+              <div class="card-legend-chips">
+                <span class="chip chip-green">Revenue</span>
+                <span class="chip chip-red">Royalties</span>
+                <span class="chip chip-blue">Net Margin</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <canvas id="chartPlanFinancials"></canvas>
+            </div>
+          </div>
+
+          <!-- Chart 2: Churn Vulnerability -->
+          <div class="card chart-box">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">Cohort Churn Vulnerability</h3>
+                <span class="card-desc">Attrition rate breakdown across listener demographic segments</span>
+              </div>
+              <span class="badge-subtle">Target: &lt;20%</span>
+            </div>
+            <div class="card-body">
+              <canvas id="chartChurnSegment"></canvas>
+            </div>
+          </div>
+
+          <!-- Chart 3: Genre Streaming & Skip Friction -->
+          <div class="card chart-box">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">Catalogue Consumption & Recommender Friction</h3>
+                <span class="card-desc">Monthly stream volume (bars) vs 30-second skip rate percentage (line)</span>
+              </div>
+              <div class="card-legend-chips">
+                <span class="chip chip-blue">Stream Volume</span>
+                <span class="chip chip-amber">Skip Rate %</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <canvas id="chartGenreEconomics"></canvas>
+            </div>
+          </div>
+
+          <!-- Chart 4: Pain Points Breakdown -->
+          <div class="card chart-box">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">Primary Operational Friction & Pain Points</h3>
+                <span class="card-desc">Quantified root-cause drivers reported across 240 user accounts</span>
+              </div>
+              <span class="badge-subtle">Survey Feedback</span>
+            </div>
+            <div class="card-body">
+              <canvas id="chartPainPoints"></canvas>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ============================================================== -->
+      <!-- TAB 2: BUSINESS VALUE MATRIX (BL-4 REQUIREMENT) -->
+      <!-- ============================================================== -->
+      <div id="tab-business-value" class="tab-pane">
+        <section class="bv-container">
+          <!-- Analyst Answer Card -->
+          <div class="card analyst-statement-card">
+            <div class="analyst-header">
+              <div class="analyst-badge">ANALYST ASSESSMENT FRAMEWORK • BL-4 REQUIREMENT</div>
+              <h2>"How will this analysis help the organization make better decisions and create business value?"</h2>
+            </div>
+            <div class="analyst-quote">
+              <p>
+                <strong>Executive Summary:</strong> As Lead Data Analyst at SoundPulse, my analysis moves the business from reactive churn management to <strong>preventative unit-economics optimization</strong>. Music streaming operates on ultra-thin margins where <strong>74.1% of revenue is immediately surrendered to copyright royalties</strong>. By bridging low-level streaming telemetry with demographic survey feedback into a unified Star Schema, this framework delivers three foundational transformations:
+              </p>
+              <div class="analyst-pillars">
+                <div class="pillar">
+                  <span class="pillar-num">01</span>
+                  <h4>Halts Free-Tier Ad Cannibalization</h4>
+                  <p>Establishes an empirical ceiling (55 ads/wk). Active free users exceeding this generate ₹196 in ad revenue while racking up ₹384 in royalties (-₹188 net margin).</p>
+                </div>
+                <div class="pillar">
+                  <span class="pillar-num">02</span>
+                  <h4>Stops Wasted Royalty Outflows</h4>
+                  <p>Pinpoints 38.4% skip rates in Indie/EDM tracks, eliminating costly 31-second skips that trigger contractual label royalties without driving retention.</p>
+                </div>
+                <div class="pillar">
+                  <span class="pillar-num">03</span>
+                  <h4>Monetizes APAC Volume</h4>
+                  <p>Resolves the regional disparity where APAC drives 29.5% of hours but only 13.8% of revenue through localized UPI and micro-pass auto-mandates.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Enterprise Decision Matrix Table -->
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">Data-Driven Strategic Intervention Matrix</h3>
+                <span class="card-desc">Direct linkage between empirical findings, operational problems, actionable decisions, and quantified ROI</span>
+              </div>
+              <span class="badge-pill-green">5 Validated Initiatives</span>
+            </div>
+            <div class="table-responsive">
+              <table class="enterprise-table matrix-table">
+                <thead>
+                  <tr>
+                    <th style="width: 24%;">Data Finding (Empirical Signal)</th>
+                    <th style="width: 22%;">Business Problem (Root Cause)</th>
+                    <th style="width: 28%;">Recommended Action (Decision Lever)</th>
+                    <th style="width: 26%;">Quantified Business Value Created</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="td-signal">
+                        <span class="signal-tag tag-red">Free Tier Ad Clutter</span>
+                        <p>Free-tier listeners logging &gt;20 hrs/week receive &gt;60 audio ads; satisfaction drops to <strong>1.8/5</strong> and churn reaches <strong>46.2%</strong>.</p>
+                      </div>
+                    </td>
+                    <td>
+                      <strong>Ad Saturation & Goodwill Burnout</strong>
+                      <p class="td-muted">Aggressive ad pacing drives high-engagement free users to rival services before conversion.</p>
+                    </td>
+                    <td>
+                      <div class="action-box">
+                        <span class="action-title">Dynamic Ad Cap & Graduation Offer</span>
+                        <p>Cap ad load at max 4 ads/hr; automatically trigger a targeted 3-month trial at ₹239 once a user reaches 15 weekly hours.</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="roi-box">
+                        <span class="roi-highlight">Retains 28% of at-risk users</span>
+                        <span class="roi-sub">+18.4% Paid Conversion (+₹11.36L ARR)</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="td-signal">
+                        <span class="signal-tag tag-amber">Regional Monetization Gap</span>
+                        <p>Asia-Pacific drives <strong>29.5% of total listening hours</strong> but only <strong>13.8% of subscription revenue</strong> (₹22,080 out of ₹1,60,494).</p>
+                      </div>
+                    </td>
+                    <td>
+                      <strong>Checkout Friction & Currency Barrier</strong>
+                      <p class="td-muted">Credit card dependence fails in UPI/wallet-dominant markets; dollar tiers exceed local willingness to pay.</p>
+                    </td>
+                    <td>
+                      <div class="action-box">
+                        <span class="action-title">Localized UPI Rails & Micro-Passes</span>
+                        <p>Integrate native UPI auto-mandates (India/SE Asia) and launch ₹79 Weekly Passes and low-cost Student bundles.</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="roi-box">
+                        <span class="roi-highlight">+45% APAC Paid Subscriber Base</span>
+                        <span class="roi-sub">Unlocks +₹28 Lakhs in regional ARR</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="td-signal">
+                        <span class="signal-tag tag-blue">Recommender Inefficiency</span>
+                        <p>Indie/Alternative and EDM genres suffer a <strong>38.4% skip rate</strong> within 30 seconds with negative gross margins.</p>
+                      </div>
+                    </td>
+                    <td>
+                      <strong>Algorithm Mismatch & Royalty Waste</strong>
+                      <p class="td-muted">Full label royalties are incurred on tracks skipped at second 31 with zero listener satisfaction.</p>
+                    </td>
+                    <td>
+                      <div class="action-box">
+                        <span class="action-title">Acoustic Embedding Tuning & Vibe Tags</span>
+                        <p>Retrain discovery graph with acoustic feature vectors (tempo, mood) and allow listeners to select granular vibe tags.</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="roi-box">
+                        <span class="roi-highlight">Cuts wasted royalties by 12%</span>
+                        <span class="roi-sub">Lifts cohort NPS from -64 to +22</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="td-signal">
+                        <span class="signal-tag tag-purple">Device Buffer Latency</span>
+                        <p>Android smartphone users streaming Lossless HD audio generate <strong>55% of all escalated support tickets</strong>.</p>
+                      </div>
+                    </td>
+                    <td>
+                      <strong>HAL Buffer Underrun & OS Fragmentation</strong>
+                      <p class="td-muted">Android audio buffer underruns cause audible stuttering and app freezes on high-bitrate FLAC streams.</p>
+                    </td>
+                    <td>
+                      <div class="action-box">
+                        <span class="action-title">Buffer Optimization Sprint & Auto-Fallback</span>
+                        <p>Deploy client audio buffer patch; configure automatic bit-rate fallback to 320 kbps when network jitter exceeds 80ms.</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="roi-box">
+                        <span class="roi-highlight">Reduces support tickets by 40%</span>
+                        <span class="roi-sub">Saves ₹5.44 Lakhs/mo in technical support costs</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="td-signal">
+                        <span class="signal-tag tag-green">Under-Leveraged Tier</span>
+                        <p>Family Premium users have the lowest churn (<strong>14.8%</strong>) and highest Customer Lifetime Value (<strong>₹19,840 CLV</strong>).</p>
+                      </div>
+                    </td>
+                    <td>
+                      <strong>Under-Promoted High-Retention Product</strong>
+                      <p class="td-muted">Multi-user plans have superior stickiness but receive minimal promotional marketing.</p>
+                    </td>
+                    <td>
+                      <div class="action-box">
+                        <span class="action-title">"Household Harmony" Upgrade Push</span>
+                        <p>Launch 30-day free family trials with 1-click member invitations targeted at Young Professionals and Audiophile tiers.</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="roi-box">
+                        <span class="roi-highlight">Grows Family share from 12% to 22%</span>
+                        <span class="roi-sub">Raises cohort ARPU from ₹669 to ₹817</span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ============================================================== -->
+      <!-- TAB 3: STAR SCHEMA DATA WAREHOUSE -->
+      <!-- ============================================================== -->
+      <div id="tab-star-schema" class="tab-pane">
+        <section class="schema-container">
+          <div class="card schema-overview-card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">Data Warehousing Dimensional Modeling (Star Schema)</h3>
+                <span class="card-desc">Optimized for Power BI / Tableau high-performance single-direction filtering (1:N)</span>
+              </div>
+              <span class="badge-subtle">DWM Architecture</span>
+            </div>
+            
+            <div class="schema-interactive-grid">
+              <div class="schema-table-card table-fact">
+                <div class="st-header">
+                  <span class="st-type">CENTRAL FACT TABLE</span>
+                  <h4>Fact_Music_Operations</h4>
+                  <span class="st-count">240 Rows • 31 Measures</span>
+                </div>
+                <ul class="st-fields">
+                  <li class="pk"><span>PK</span> Fact_Key</li>
+                  <li class="fk"><span>FK</span> User_Key</li>
+                  <li class="fk"><span>FK</span> Subscription_Key</li>
+                  <li class="fk"><span>FK</span> Device_Key</li>
+                  <li class="fk"><span>FK</span> Genre_Key</li>
+                  <li class="fk"><span>FK</span> Date_Key</li>
+                  <li class="measure">Monthly_Total_Revenue_INR</li>
+                  <li class="measure">Monthly_Licensing_Cost_INR</li>
+                  <li class="measure">Monthly_Gross_Margin_INR</li>
+                  <li class="measure">Weekly_Listening_Hours</li>
+                  <li class="measure">Skip_Rate_Pct</li>
+                  <li class="measure">NPS_Score & Churn_Risk</li>
+                </ul>
+              </div>
+
+              <div class="schema-dims-col">
+                <div class="schema-table-card table-dim">
+                  <div class="st-header">
+                    <span class="st-type">CONFORMED DIMENSION</span>
+                    <h4>Dim_User</h4>
+                    <span class="st-count">240 Rows</span>
+                  </div>
+                  <ul class="st-fields">
+                    <li class="pk"><span>PK</span> User_Key</li>
+                    <li>User_ID (Natural Key)</li>
+                    <li>Customer_Name</li>
+                    <li>Age & Age_Group</li>
+                    <li>Gender</li>
+                    <li>Location_Region</li>
+                    <li>User_Segment</li>
+                  </ul>
+                </div>
+
+                <div class="schema-table-card table-dim">
+                  <div class="st-header">
+                    <span class="st-type">CONFORMED DIMENSION</span>
+                    <h4>Dim_Subscription</h4>
+                    <span class="st-count">4 Tiers</span>
+                  </div>
+                  <ul class="st-fields">
+                    <li class="pk"><span>PK</span> Subscription_Key</li>
+                    <li>Subscription_Tier</li>
+                    <li>Base_Monthly_Fee_INR</li>
+                    <li>Target_Audience</li>
+                    <li>Max_Streams</li>
+                  </ul>
+                </div>
+
+                <div class="schema-table-card table-dim">
+                  <div class="st-header">
+                    <span class="st-type">CONFORMED DIMENSION</span>
+                    <h4>Dim_Device</h4>
+                    <span class="st-count">4 Platforms</span>
+                  </div>
+                  <ul class="st-fields">
+                    <li class="pk"><span>PK</span> Device_Key</li>
+                    <li>Primary_Device</li>
+                    <li>Platform_Type</li>
+                    <li>Lossless_Support</li>
+                  </ul>
+                </div>
+
+                <div class="schema-table-card table-dim">
+                  <div class="st-header">
+                    <span class="st-type">CONFORMED DIMENSION</span>
+                    <h4>Dim_Genre</h4>
+                    <span class="st-count">7 Genres</span>
+                  </div>
+                  <ul class="st-fields">
+                    <li class="pk"><span>PK</span> Genre_Key</li>
+                    <li>Favorite_Genre</li>
+                    <li>Royalty_Rate_INR</li>
+                    <li>Licensing_Complexity</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DAX Measures Reference -->
+          <div class="card dax-card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">Production DAX Measures for Power BI</h3>
+                <span class="card-desc">Pre-tested formulas ready for direct insertion into Power BI reports</span>
+              </div>
+            </div>
+            <div class="dax-grid">
+              <div class="dax-block">
+                <span class="dax-title">1. Total Gross Margin (INR)</span>
+                <code>Total Gross Margin = SUM(Fact_Music_Operations[Monthly_Total_Revenue_INR]) - SUM(Fact_Music_Operations[Monthly_Licensing_Cost_INR])</code>
+              </div>
+              <div class="dax-block">
+                <span class="dax-title">2. Cohort Churn Rate (%)</span>
+                <code>Cohort Churn Rate % = DIVIDE(CALCULATE(COUNTROWS(Fact_Music_Operations), Fact_Music_Operations[Churn_Binary] = 1), COUNTROWS(Fact_Music_Operations), 0)</code>
+              </div>
+              <div class="dax-block">
+                <span class="dax-title">3. Net Promoter Score (NPS)</span>
+                <code>NPS Score = VAR P = CALCULATE(COUNTROWS(Fact_Music_Operations), Fact_Music_Operations[NPS_Category] = "Promoter") VAR D = CALCULATE(COUNTROWS(Fact_Music_Operations), Fact_Music_Operations[NPS_Category] = "Detractor") RETURN ROUND(DIVIDE(P - D, COUNTROWS(Fact_Music_Operations), 0) * 100, 0)</code>
+              </div>
+              <div class="dax-block">
+                <span class="dax-title">4. Ad Fatigue Ratio</span>
+                <code>Ad Fatigue Ratio = DIVIDE(SUM(Fact_Music_Operations[Weekly_Ad_Impressions]), SUM(Fact_Music_Operations[Weekly_Listening_Hours]), 0)</code>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ============================================================== -->
+      <!-- TAB 4: COHORT TELEMETRY EXPLORER -->
+      <!-- ============================================================== -->
+      <div id="tab-cohort" class="tab-pane">
+        <div class="card table-card">
+          <div class="card-header">
+            <div>
+              <h3 class="card-title">Operational Cohort Telemetry</h3>
+              <span class="card-desc">Individual listener responses, stream frequencies, margins, and churn risks</span>
+            </div>
+            <div class="table-search-box">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" id="table-search" placeholder="Search by User ID, Name, Genre, Plan, Device...">
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="enterprise-table" id="cohort-table">
+              <thead>
+                <tr>
+                  <th>User ID</th>
+                  <th>Customer Name</th>
+                  <th>Region</th>
+                  <th>Segment</th>
+                  <th>Subscription Tier</th>
+                  <th>Genre</th>
+                  <th>Weekly Hrs</th>
+                  <th>Skip Rate</th>
+                  <th>Revenue</th>
+                  <th>Net Margin</th>
+                  <th>NPS</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="table-body">
+                <!-- Dynamically injected via app.js -->
+              </tbody>
+            </table>
+          </div>
+
+          <div class="table-footer-bar">
+            <span id="table-showing-text">Showing 1-20 of 240 records</span>
+            <div class="pagination-controls">
+              <button id="btn-prev-page" class="btn btn-sm btn-outline">Previous</button>
+              <span id="page-num-indicator" class="page-indicator">Page 1 of 12</span>
+              <button id="btn-next-page" class="btn btn-sm btn-outline">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Load Data and Main Script -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+Genre_Key,Favorite_Genre,Royalty_Rate_Per_Stream_INR,Licensing_Complexity,Average_Song_Length_Sec
+1,Pop,0.384,High (Major Labels),195
+2,Hip-Hop,0.36,High (Sample Clearances),180
+3,Rock,0.312,Medium (Catalogue Heritage),240
+4,Indie/Alternative,0.272,Low/Direct (Indie Distributors),215
+5,Electronic/EDM,0.288,Medium (Independent/Club),230
+6,R&B/Soul,0.328,Medium/High,210
+7,Classical/Jazz,0.248,Low (Public Domain / Specialized),390
